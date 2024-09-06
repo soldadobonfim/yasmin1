@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong> Meu Amor Yasmin .</strong>
+                        <p>
+                            Minha querida, estou te escrevendo esta mensagem para que se lembre 
+                            do meu amor por você. Amo-te cada dia mais e mais e quero sempre tua 
+                            companhia, obrigado por tudo oque és para mim. Eu te amo, estou morrendo de saudades
+                            de ti, quero estar me afogando no seu abraço em breve. beijos do seu amado. 
+                            ..........você é tudo para mim ❤️    .........
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
